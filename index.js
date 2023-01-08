@@ -11,6 +11,7 @@ let triangle = document.getElementById("tri");
 let invalid = document.getElementById("inv");
 let description = document.getElementById("descr");
 let arrow = document.getElementById("arrow");
+let disclaimer = document.getElementById("disc")
 
 Calculate = () => {
   // Calibrating side values
@@ -34,6 +35,7 @@ Calculate = () => {
     ) {
       triangle.classList.remove("hide");
       invalid.classList.add("hide");
+      disclaimer.classList.remove("hide")
 
       // Identifying the triangle type (sides)
       let sideArr = [sideA, sideB, sideC];
@@ -150,6 +152,7 @@ Calculate = () => {
         be greater than the third side)`;
       invalid.classList.remove("hide");
       console.log("Not a valid triangle");
+      disclaimer.classList.add("hide")
 
       // triangle trivia if triangle dimensions are invalid
 
