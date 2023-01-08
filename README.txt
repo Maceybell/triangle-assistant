@@ -7,3 +7,10 @@ I really wanted to display an actual triangle. I have never tried to specificall
 When there was not a valid input for sides of a triangle, the app looked a little boring. So I decided to replace the area that the triangle would render with a few fun facts about triangles to fill the space a little bit more. 
 
 This was an app that was really fun for me to make. Recently I have been doing more work on web apps with an e-commerce feel so it was enjoyable to get my geometry on instead. 
+
+A few things I think would be fun to add: 
+
+-a save button that will store previously rendered triangles and their data
+-a triangle that renders accurately 100% of the time, but I definitely do not want to do this with html and css. I think it would take a lot of logic and a lot of research.
+-logic to make the triangle always render in a page-friendly size that is proportionate to the inputs 
+
