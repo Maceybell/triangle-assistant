@@ -11,8 +11,6 @@ body {
   align-items: center;
   background-color: rgb(33, 33, 33);
   color: white;
-  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 rgba(0, 0, 0, 0.927),
-    -1px -1px 0 #000;
 }
 
 header {
@@ -23,35 +21,37 @@ header {
   font-size: 40px;
   align-items: center;
   padding: 10px;
-  
 }
 
-
-.info-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 50px;
-    width:auto;
-} 
+.info-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+  width: auto;
+}
 
 .sides {
-    border: black solid 1px;
-    padding: 30px;
-    gap: 5px;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    width:300px;
-  }
+  border: black solid 1px;
+  padding: 30px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 300px;
+}
 
-.disclaimer{
-    font-size: 12px;
+.disclaimer {
+  font-size: 12px;
+  padding: 50px;
+}
+
+.invalid {
+  margin: 50px;
 }
 
 .description {
-
   height: 200px;
   width: 300px;
   border: black solid 1px;
@@ -63,12 +63,14 @@ header {
   margin: 20px;
 }
 
-.inner-text{
-    font-size: 13px;
-    line-height: 19px;
+.inner-text {
+  font-size: 13px;
+  line-height: 19px;
 }
 
 .arrow-up {
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000,
+    1px -1px 0 rgba(0, 0, 0, 0.927), -1px -1px 0 #000;
   width: 0;
   height: 0;
   border-left-color: transparent;
@@ -77,13 +79,14 @@ header {
   border-right-style: solid;
   border-bottom-color: rgb(78, 209, 238);
   border-bottom-style: solid;
-
   position: relative;
+  margin-bottom: 80px;
 }
 
 .tringle {
   display: flex;
   justify-content: center;
+  
 }
 
 .hide {
@@ -115,3 +118,5 @@ header {
 .side-c {
   position: absolute;
 }
+
+

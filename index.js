@@ -153,9 +153,12 @@ Calculate = () => {
 
       // triangle trivia if triangle dimensions are invalid
 
-      const trivia = ["The Leaning Tower of Pisa leans at an angle of 3.99°. Physicists say it would fall if it maintained an angle greater than 5.44°", "Doritos resemble an isosceles triangle.", "The Flatiron building in New York was built on a triangular piece of land. They made it a triangular prism to capitalize on the alotted room.", "A triangle pointed up represents stability, balance and movement in design."]
+      const trivia = ["The Leaning Tower of Pisa leans at an angle of 3.99°. Physicists say it would fall if it maintained an angle greater than 5.44°", "Doritos resemble an isosceles triangle.", "The Flatiron building in New York was built on a triangular piece of land. They made it a triangular prism to capitalize on the alotted room.", "A triangle pointed up represents stability, balance and movement in design.","The triangle instrument has one angle left open, keeping the instrument from having a definite pitch. It is also made fun of a lot.", "Some officials claim the vertices of the Bermuda Triangle are in Florida, Puerto Rico and Bermuda, though others have argued different locations as well. It is probably the world's most haunted triangle." ]
 
-      invalid.innerText = "The Leaning Tower of Pisa leans at an angle of 3.99°. Physicists say it would fall if it maintained an angle greater than 5.44° "
+      let randomIndex = Math.floor(Math.random() * trivia.length)
+      let randomTrivia = trivia[randomIndex]
+
+      invalid.innerText = `${randomTrivia}`
     }
   }
 };
