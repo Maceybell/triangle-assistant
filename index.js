@@ -16,14 +16,15 @@ let disclaimer = document.getElementById("disc")
 Calculate = () => {
   // Calibrating side values
   let sideA = sideAInput.value;
+  console.log(sideA + 'sideA')
   let sideB = sideBInput.value;
   let sideC = sideCInput.value;
 
   // Checking Complete Input Fields
   if ((sideA !== "") & (sideB !== "") & (sideC !== "")) {
-    sideA = parseInt(sideA);
-    sideB = parseInt(sideB);
-    sideC = parseInt(sideC);
+    sideA = parseFloat(sideA);
+    sideB = parseFloat(sideB);
+    sideC = parseFloat(sideC);
     console.log(sideA);
     console.log(sideA + sideB);
 
@@ -64,20 +65,20 @@ Calculate = () => {
       let angleA = (
         Math.acos((b * b + c * c - a * a) / (2 * b * c)) *
         (180 / Math.PI)
-      ).toFixed(1);
-      angleALabel.innerText = `${angleA}°`;
+      );
+      angleALabel.innerText = `${angleA.toFixed(1)}°`;
 
       let angleB = (
         Math.acos((a * a + c * c - b * b) / (2 * a * c)) *
         (180 / Math.PI)
-      ).toFixed(1);
-      angleBLabel.innerText = `${angleB}°`;
+      );
+      angleBLabel.innerText = `${angleB.toFixed(1)}°`;
 
       let angleC = (
         Math.acos((a * a + b * b - c * c) / (2 * a * b)) *
         (180 / Math.PI)
-      ).toFixed(1);
-      angleCLabel.innerText = `${angleC}°`;
+      );
+      angleCLabel.innerText = `${angleC.toFixed(1)}°`;
 
       //Identifying the triangle type (angles)
 
@@ -121,17 +122,17 @@ Calculate = () => {
       description.innerText =
         `This is ${angleType}, ${sideType} triangle.` +
         "\n" +
-        `Angle A: ${angleA}°` +
+        `Angle A: ${angleA.toFixed(1)}°` +
         "\n" +
-        `Angle B: ${angleB}°` +
+        `Angle B: ${angleB.toFixed(1)}°` +
         "\n" +
-        `Angle C: ${angleC}°` +
+        `Angle C: ${angleC.toFixed(1)}°` +
         "\n" +
-        `Height: ${height}` +
+        `Height: ${height.toFixed(1)}` +
         "\n" +
-        `Area: ${area}°` +
+        `Area: ${area.toFixed(1)}°` +
         "\n" +
-        `Semiperimeter: ${semiperimeter} `;
+        `Semiperimeter: ${semiperimeter.toFixed(1)} `;
 
       //sizing the css triangle and moving the labels
       sideALabel.style.top = `${height}px`;
