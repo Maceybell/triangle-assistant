@@ -16,9 +16,9 @@ let disclaimer = document.getElementById("disc")
 Calculate = () => {
   // Calibrating side values
   let sideA = sideAInput.value;
-  console.log(sideA + 'sideA')
   let sideB = sideBInput.value;
   let sideC = sideCInput.value;
+
 
   // Checking Complete Input Fields
   if ((sideA !== "") & (sideB !== "") & (sideC !== "")) {
@@ -130,7 +130,7 @@ Calculate = () => {
         "\n" +
         `Height: ${height.toFixed(1)}` +
         "\n" +
-        `Area: ${area.toFixed(1)}°` +
+        `Area: ${area.toFixed(1)}` +
         "\n" +
         `Semiperimeter: ${semiperimeter.toFixed(1)} `;
 
